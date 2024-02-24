@@ -1,15 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <div style={{ background: "red" }}>Hi from div 1</div>
-      <div style={{ background: "yellow" }}>Hi from div 2</div>
-      <div style={{ background: "green" }}>Hi from div 3</div>
+    <div className="md:flex justify-between">
+      <div className="bg-red-500 w-full">Hi from div 1</div>
+      <div className="bg-yellow-500 w-full"> Hi from div 2</div>
+      <div className="bg-green-500 w-full">hi from div 3</div>
     </div>
   );
 }
